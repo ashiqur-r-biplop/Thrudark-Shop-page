@@ -110,7 +110,7 @@ select {
     width: 581px;
     height: 100%;
     cursor: pointer;
-    padding: 40px 0px 150px 0px ;
+    padding: 40px 0px 150px 0px;
     color: white;
 }
 
@@ -121,7 +121,6 @@ select {
     background: #97999b;
     background: linear-gradient(150deg, #97999b1f, #97999b5e);
     border: 1px solid #4f4f4f;
-
 }
 
 .card-image {
@@ -140,10 +139,10 @@ select {
 .img .back-site {
     position: absolute;
     top: 0;
-    height: 100%;
     left: 0;
     transition: all .3s ease-in-out;
     opacity: 0;
+    object-fit: contain;
 }
 
 .card:hover .img .back-site {
