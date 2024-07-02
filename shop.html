@@ -1167,10 +1167,68 @@
         </div>
       </section>
     </section>
+    <section class="faq-section">
+      <div class="container">
+        <div class="accordion-wrapper">
+          <h2 class="section-title">FAQ'S</h2>
+          <div class="accordion">
+            <input type="checkbox" name="radio-a" class="faq-input" id="check1" >
+            <label class="accordion-label" for="check1"> What is a Qualified Property Investment Advisor?</label>
+            <div class="accordion-content">
+              <p>It is a designation from the Property Investment Professionals of Australia (PIPA). It signifies expertise in property investment advice, ensuring clients receive specialised guidance tailored to their investment goals. QPIA’s must also uphold PIPA’s code of conduct. Currently there are less than 20 QPIA accredited mortgage brokers.  &#128522;</p>
+            </div>
+          </div>
+          <div class="accordion">
+            <input type="checkbox" name="radio-a" class="faq-input" id="check2">
+            <label class="accordion-label" for="check2"> What is the best investment strategy?</label>
+            <div class="accordion-content">
+              <p>Long answer short: the one you can stick to that supports your long term goals. Tactics such as debt recycling, negative/positive gearing, manufacturing equity can all yield great results. The best thing to do is book a free strategy session and get some clarity. 
+        </p>
+            </div>
+          </div>
+          <div class="accordion">
+            <input type="checkbox" name="radio-a" class="faq-input" id="check3">
+            <label class="accordion-label" for="check3"> Is a 95% loan approval rate good?</label>
+            <div class="accordion-content">
+              <p>Between brokers and banks a total of 40% of home loan applications are declined. Our systems and processes are built to maximise your chance of approval first time.   </p>
+            </div>
+          </div>
+        <div class="accordion">
+            <input type="checkbox" name="radio-a" class="faq-input" id="check4">
+            <label class="accordion-label" for="check4"> I am outside of Adelaide. Can we work together?</label>
+            <div class="accordion-content">
+              <p>Definitely! We are fully digital so we can work toward your property goals while you are in your PJ’s. </p>
+            </div>
+          </div>
+        <div class="accordion">
+            <input type="checkbox" name="radio-a" class="faq-input" id="check5">
+            <label class="accordion-label" for="check5"> I am a first time buyer. Will you work with me? </label>
+            <div class="accordion-content">
+              <p>We have helped many first home buyers achieve their property drea. Scroll up and hear directly from Rachelle and Nath or Arianna who were both first time buyers. </p>
+          </div>  
+        
+      </div>
+      </div>
+    </section>
     <!-- script cdn font awesome  -->
     <script
       src="https://kit.fontawesome.com/253828a4b7.js"
       crossorigin="anonymous"
     ></script>
+  <!-- script  -->
+  <script>
+    var acc = document.querySelectorAll(".accordion input[type='checkbox']");
+
+    for (var i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("change", function () {
+        // Uncheck all checkboxes
+        for (var j = 0; j < acc.length; j++) {
+          if (acc[j] !== this) {
+            acc[j].checked = false;
+          }
+        }
+      });
+    }
+  </script>
   </body>
 </html>
