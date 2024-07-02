@@ -180,4 +180,77 @@ select {
     width: 70px;
 }
 
+.prd-Card_Option {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 0px;
+    gap: 10px;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+.card:hover .prd-Card_Option{
+    opacity: 1;
+    transition: all .3s ease-in-out;
+
+}
+.prd-Card_Option .prd-Card_Label {
+    color: white;
+}
+
+.fz-12_15 {
+    font-family: Aeul;
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: .05em;
+    line-height: 15px;
+    text-transform: uppercase;
+}
+
+.card-sizeing-button {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    margin: 0 2px 2px;
+    text-transform: uppercase;
+    background-color: #fff;
+    border: 0;
+    color: #fff;
+    font-size: .7rem;
+    clip-path: polygon(5px 0%, calc(100% - 5px) 0%, 100% 5px, 100% calc(100% - 5px), calc(100% - 5px) 100%, 5px 100%, 0% calc(100% - 5px), 0% 5px);
+    transition: all .5s ease, color .5s ease;
+    cursor: pointer;
+}
+
+.card-sizeing-button::after {
+    content: "";
+    width: 28px;
+    height: 28px;
+    background-color: #000;
+    color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    clip-path: polygon(5px 0%, calc(100% - 5px) 0%, 100% 5px, 100% calc(100% - 5px), calc(100% - 5px) 100%, 5px 100%, 0% calc(100% - 5px), 0% 5px);
+    z-index: -1;
+    transition: all .5s ease, color .5s ease;
+}
+
+.prd-Card_Button-inner {
+    z-index: 99999 !important;
+}
+
+.card-sizeing-button:hover {
+    color: #000;
+}
+
+.card-sizeing-button:hover::after {
+    background-color: #fff;
+}
+
 /* cards style in shop page end */
