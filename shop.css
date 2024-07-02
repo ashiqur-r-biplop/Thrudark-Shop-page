@@ -81,6 +81,7 @@ select {
     background-size: cover;
     background-attachment: fixed;
     background-color: #000;
+
 }
 
 .shop-page-card-section::after {
@@ -100,7 +101,7 @@ select {
 .shop-grid-card {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 50px 0;
+    /* padding: 50px 0; */
     gap: 20px;
     font-family: Aeul;
 }
@@ -109,15 +110,18 @@ select {
     width: 581px;
     height: 100%;
     cursor: pointer;
-    background: #97999b;
-    background: linear-gradient(150deg, #97999b1f, #97999b5e);
-    border: 1px solid #4f4f4f;
+    padding: 40px 0px 150px 0px ;
+    color: white;
 }
 
 .card-image {
     width: 100%;
     height: 880px;
     position: relative;
+    background: #97999b;
+    background: linear-gradient(150deg, #97999b1f, #97999b5e);
+    border: 1px solid #4f4f4f;
+
 }
 
 .card-image {
@@ -193,11 +197,13 @@ select {
     opacity: 0;
     transition: all .3s ease-in-out;
 }
-.card:hover .prd-Card_Option{
+
+.card:hover .prd-Card_Option {
     opacity: 1;
     transition: all .3s ease-in-out;
 
 }
+
 .prd-Card_Option .prd-Card_Label {
     color: white;
 }
@@ -251,6 +257,19 @@ select {
 
 .card-sizeing-button:hover::after {
     background-color: #fff;
+}
+
+.product-tagline {
+    color: #716A52;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    gap: 5px;
 }
 
 /* cards style in shop page end */
