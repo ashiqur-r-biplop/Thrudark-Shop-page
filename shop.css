@@ -109,12 +109,14 @@ select {
     width: 581px;
     height: 100%;
     cursor: pointer;
+    background: #97999b;
+    background: linear-gradient(150deg, #97999b1f, #97999b5e);
+    border: 1px solid #4f4f4f;
 }
 
 .card-image {
     width: 100%;
     height: 880px;
-    border: 1px solid red;
     position: relative;
 }
 
@@ -128,32 +130,54 @@ select {
 }
 
 .img .font-site {
-    transition: all .5s ease-in-out;
-
+    transition: all .3s ease-in-out;
 }
 
 .img .back-site {
     position: absolute;
     top: 0;
-    border: 1px solid red;
     height: 100%;
     left: 0;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
     opacity: 0;
 }
 
 .card:hover .img .back-site {
     opacity: 1;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .card .img .font-site {
     opacity: 1;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
 }
+
 .card:hover .img .font-site {
     opacity: 0;
-    transition: all .5s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+.shop-side-card-image-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+
+}
+
+.card:hover .shop-side-card-image-group {
+    opacity: 1;
+    transition: all .3s ease-in-out;
+}
+
+.shop-card-site-bar-image .shop-side-card-image-group img {
+    width: 100%;
+    width: 70px;
 }
 
 /* cards style in shop page end */
