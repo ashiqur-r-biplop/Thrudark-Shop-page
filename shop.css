@@ -592,6 +592,7 @@ select {
 .faq-section {
     background-color: #161616;
     padding: 20px 0px;
+
 }
 
 .accordion-wrapper {
@@ -619,7 +620,8 @@ select {
 .section-title {
     font-family: TTMussels-Light;
     color: #fff;
-
+    border-bottom: 1px solid gray;
+    padding-bottom: 10x;
 }
 
 .accordion:last-child {
@@ -715,6 +717,8 @@ input:checked~.accordion-content {
     max-height: 300px;
 }
 
+/* FAQ */
+/* swiper css  */
 @media screen and (min-width: 0px) and (max-width: 480px) {
     .accordion-wrapper {
         border-radius: 8px;
@@ -724,5 +728,3 @@ input:checked~.accordion-content {
         margin: 0 auto;
     }
 }
-
-/* FAQ */
