@@ -170,6 +170,8 @@ select {
     left: 0;
     opacity: 0;
     transition: all .3s ease-in-out;
+    padding: 10px;
+    gap: 10px;
 
 }
 
@@ -179,8 +181,123 @@ select {
 }
 
 .shop-card-site-bar-image .shop-side-card-image-group img {
-    width: 100%;
     width: 70px;
+    height: 100px;
+}
+
+.image-site-bar-card {
+    position: relative;
+    width: 70px;
+    height: 100px;
+}
+
+.shop-card-left-top-border::after,
+.shop-card-left-top-border::before,
+.shop-card-right-top-border::after,
+.shop-card-right-top-border::before,
+.shop-card-left-bottom-border::after,
+.shop-card-left-bottom-border::before,
+.shop-card-right-bottom-border::after,
+.shop-card-right-bottom-border::before {
+    content: '';
+    position: absolute;
+    background-color: transparent;
+    transition: all .3s ease-in-out;
+}
+
+.image-site-bar-card:hover .shop-card-left-top-border::after,
+.image-site-bar-card:hover .shop-card-left-top-border::before,
+.image-site-bar-card:hover .shop-card-right-top-border::after,
+.image-site-bar-card:hover .shop-card-right-top-border::before,
+.image-site-bar-card:hover .shop-card-left-bottom-border::after,
+.image-site-bar-card:hover .shop-card-left-bottom-border::before,
+.image-site-bar-card:hover .shop-card-right-bottom-border::after,
+.image-site-bar-card:hover .shop-card-right-bottom-border::before {
+    background-color: #7c7c7c;
+    transition: all .3s ease-in-out;
+}
+
+.shop-card-left-top-border::after {
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 1px;
+}
+
+.shop-card-left-top-border::before {
+    top: 0;
+    left: 0;
+    width: 1px;
+    height: 10px;
+}
+
+.shop-card-right-top-border::after {
+    top: 0;
+    right: 0;
+    width: 10px;
+    height: 1px;
+}
+
+.shop-card-right-top-border::before {
+    top: 0;
+    right: 0;
+    width: 1px;
+    height: 10px;
+}
+
+.shop-card-left-bottom-border::after {
+    bottom: 0;
+    left: 0;
+    width: 10px;
+    height: 1px;
+}
+
+.shop-card-left-bottom-border::before {
+    bottom: 0;
+    left: 0;
+    width: 1px;
+    height: 10px;
+}
+
+.shop-card-right-bottom-border::after {
+    bottom: 0;
+    right: 0;
+    width: 1px;
+    height: 10px;
+}
+
+.shop-card-right-bottom-border::before {
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 1px;
+}
+
+.shop-card-bookmark-icon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #00000075;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 4px;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+}
+
+.shop-card-bookmark-icon:hover {
+    background-color: #716A52;
+    transition: all .3s ease-in-out;
+
+}
+
+.card:hover .shop-card-bookmark-icon {
+    opacity: 1;
+    transition: all .3s ease-in-out;
 }
 
 .prd-Card_Option {
@@ -260,6 +377,8 @@ select {
 
 .product-tagline {
     color: #716A52;
+    font-size: 14px;
+    font-weight: 600;
 }
 
 .card-content {
