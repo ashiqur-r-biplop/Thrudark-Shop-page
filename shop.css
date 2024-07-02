@@ -15,6 +15,7 @@
     background-color: black;
     color: white;
     text-transform: uppercase;
+    border: 1px solid #212121;
 }
 
 .filter-featured-box {
@@ -22,13 +23,13 @@
     justify-content: space-between;
     align-items: center;
     text-align: center;
+
 }
 
 .Featured-box,
 .filter-box {
     width: 50%;
     padding: 10px 0px;
-    border: 1px solid #212121;
     cursor: pointer;
 }
 
@@ -64,3 +65,29 @@ select {
     width: 20px;
     height: 20px;
 }
+
+/* cards style in shop page */
+.shop-page-card-section {
+    opacity: 1;
+    background: url(//www.thrudark.com/cdn/shop/files/Fog_Overlay_1_6.png?v=1696504462&width=1200);
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #000;
+}
+
+.shop-page-card-section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: #000;
+    z-index: -1;
+}
+
+/* cards style in shop page end */
