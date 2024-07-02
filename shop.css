@@ -126,10 +126,15 @@ select {
 .card-image {
     width: 100%;
     height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .card-image img {
     width: 100%;
+    height: 100%;
+
 }
 
 .img .font-site {
@@ -138,6 +143,8 @@ select {
 
 .img .back-site {
     position: absolute;
+    width: 100%;
+    height: 100%;
     top: 0;
     left: 0;
     transition: all .3s ease-in-out;
