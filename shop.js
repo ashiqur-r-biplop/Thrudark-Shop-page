@@ -65,7 +65,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
 
         sliderContent.style.transform = `translateX(-${
-          currentSlideIndex * 290
+          currentSlideIndex * 250
         }px)`;
       } else if (currentSlideIndex >= 5) {
         sliderContent.style.transform = `translateX(-${
