@@ -1,486 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="shop.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
 
-    <title>Thrudark-Shop-page</title>
-  </head>
-  <body>
-    <section class="">
-      <!-- shop topbar -->
-      <div class="shop-filer-bar">
-        <div class="container">
-          <div class="filter-featured-box">
-            <div class="filter-box">
-              <div class="icon">
-                <svg
-                  viewBox="0 0 16 16"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M2.682 3.182A.681.681 0 0 0 2 3.863v1.182c0 .377.305.682.682.682h1.182a.681.681 0 0 0 .681-.682V3.863a.681.681 0 0 0-.681-.681H2.682ZM1 3.863c0-.929.753-1.681 1.682-1.681h1.182c.929 0 1.681.752 1.681 1.681v1.182c0 .93-.752 1.682-1.681 1.682H2.682C1.752 6.727 1 5.974 1 5.045V3.863ZM12.136 10.273a.681.681 0 0 0-.681.681v1.182c0 .377.305.682.681.682h1.182a.681.681 0 0 0 .682-.682v-1.182a.681.681 0 0 0-.682-.681h-1.182Zm-1.681.681c0-.929.752-1.682 1.681-1.682h1.182c.93 0 1.682.753 1.682 1.682v1.182c0 .93-.753 1.682-1.682 1.682h-1.182c-.929 0-1.681-.753-1.681-1.682v-1.182ZM7.409 6.728a.681.681 0 0 0-.682.681v1.182c0 .377.305.682.682.682H8.59a.681.681 0 0 0 .681-.682V7.41a.681.681 0 0 0-.681-.681H7.409Zm-1.682.681c0-.929.753-1.681 1.682-1.681H8.59c.929 0 1.682.752 1.682 1.681v1.182c0 .93-.753 1.682-1.682 1.682H7.409c-.93 0-1.682-.753-1.682-1.682V7.41Z"
-                    fill="currentColor"
-                  ></path>
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M3.273 1a.5.5 0 0 1 .5.5v1.182a.5.5 0 0 1-1 0V1.5a.5.5 0 0 1 .5-.5ZM3.273 5.728a.5.5 0 0 1 .5.5V14.5a.5.5 0 0 1-1 0V6.228a.5.5 0 0 1 .5-.5ZM8 9.272a.5.5 0 0 1 .5.5V14.5a.5.5 0 0 1-1 0V9.772a.5.5 0 0 1 .5-.5ZM8 1a.5.5 0 0 1 .5.5v4.727a.5.5 0 0 1-1 0V1.5A.5.5 0 0 1 8 1ZM12.727 1a.5.5 0 0 1 .5.5v8.273a.5.5 0 0 1-1 0V1.5a.5.5 0 0 1 .5-.5ZM12.727 12.818a.5.5 0 0 1 .5.5V14.5a.5.5 0 0 1-1 0v-1.182a.5.5 0 0 1 .5-.5Z"
-                    fill="currentColor"
-                  ></path>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="shop.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <title>Thrudark-Shop-page</title>
+</head>
+
+<body>
+  <section class="">
+    <!-- shop topbar -->
+    <div class="shop-filer-bar">
+      <div class="container">
+        <div class="filter-featured-box">
+          <div class="filter-box">
+            <div class="icon">
+              <svg viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M2.682 3.182A.681.681 0 0 0 2 3.863v1.182c0 .377.305.682.682.682h1.182a.681.681 0 0 0 .681-.682V3.863a.681.681 0 0 0-.681-.681H2.682ZM1 3.863c0-.929.753-1.681 1.682-1.681h1.182c.929 0 1.681.752 1.681 1.681v1.182c0 .93-.752 1.682-1.681 1.682H2.682C1.752 6.727 1 5.974 1 5.045V3.863ZM12.136 10.273a.681.681 0 0 0-.681.681v1.182c0 .377.305.682.681.682h1.182a.681.681 0 0 0 .682-.682v-1.182a.681.681 0 0 0-.682-.681h-1.182Zm-1.681.681c0-.929.752-1.682 1.681-1.682h1.182c.93 0 1.682.753 1.682 1.682v1.182c0 .93-.753 1.682-1.682 1.682h-1.182c-.929 0-1.681-.753-1.681-1.682v-1.182ZM7.409 6.728a.681.681 0 0 0-.682.681v1.182c0 .377.305.682.682.682H8.59a.681.681 0 0 0 .681-.682V7.41a.681.681 0 0 0-.681-.681H7.409Zm-1.682.681c0-.929.753-1.681 1.682-1.681H8.59c.929 0 1.682.752 1.682 1.681v1.182c0 .93-.753 1.682-1.682 1.682H7.409c-.93 0-1.682-.753-1.682-1.682V7.41Z"
+                  fill="currentColor"></path>
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M3.273 1a.5.5 0 0 1 .5.5v1.182a.5.5 0 0 1-1 0V1.5a.5.5 0 0 1 .5-.5ZM3.273 5.728a.5.5 0 0 1 .5.5V14.5a.5.5 0 0 1-1 0V6.228a.5.5 0 0 1 .5-.5ZM8 9.272a.5.5 0 0 1 .5.5V14.5a.5.5 0 0 1-1 0V9.772a.5.5 0 0 1 .5-.5ZM8 1a.5.5 0 0 1 .5.5v4.727a.5.5 0 0 1-1 0V1.5A.5.5 0 0 1 8 1ZM12.727 1a.5.5 0 0 1 .5.5v8.273a.5.5 0 0 1-1 0V1.5a.5.5 0 0 1 .5-.5ZM12.727 12.818a.5.5 0 0 1 .5.5V14.5a.5.5 0 0 1-1 0v-1.182a.5.5 0 0 1 .5-.5Z"
+                  fill="currentColor"></path>
+              </svg>
+            </div>
+            <span class="uppercase-text">Filter</span>
+          </div>
+          <div class="Featured-box">
+            <select name="FEATURED-FILTER" id="FEATURED-FILTER">
+              <option value="FEATURED">FEATURED</option>
+              <option value="BEST-SELLING">BEST SELLING</option>
+              <option value="ALPHABETICALLY-A-Z">ALPHABETICALLY, A-Z</option>
+              <option value="ALPHABETICALLY-Z-A">ALPHABETICALLY, Z-A</option>
+              <option value="PRICE-LOW-TO-HIGH">PRICE, LOW TO HIGH</option>
+              <option value="PRICE-HIGH-TO-LOW">PRICE, HIGH TO LOW</option>
+              <option value="DATE-OLD-TO-NEW">DATE, OLD TO NEW</option>
+              <option value="DATE-NEW-TO-OLD">DATE, NEW TO OLD</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="shop-page-card-section">
+      <div class="container">
+        <div class="shop-grid-card">
+          <!-- card 1 -->
+          <div class="card">
+            <div class="card-image">
+              <div class="img">
+                <img src="./image/Product Images/shop-card-1-front.png" class="font-site" alt="" />
+                <img src="./image/Product Images/shop-card-1-back.png" class="back-site" alt="" />
+              </div>
+              <div class="shop-card-site-bar-image">
+                <div class="shop-side-card-image-group">
+                  <div class="image-site-bar-card">
+                    <div class="shop-card-left-top-border">
+                      <div class="shop-card-right-top-border">
+                        <div class="shop-card-left-bottom-border">
+                          <div class="shop-card-right-bottom-border">
+                            <img src="./image/Product Images/shop-card-v1-front.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="prd-Card_Option">
+                <label class="prd-Card_Label fz-12_15">Quick Add</label>
+
+                <div class="prd-Card_Buttons">
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XS</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">S</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">M</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">L</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XXL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">3XL</span>
+                  </button>
+                </div>
+              </div>
+              <div class="shop-card-bookmark-icon">
+                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
+                    fill="currentColor"></path>
+                  <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
                 </svg>
               </div>
-              <span class="uppercase-text">Filter</span>
             </div>
-            <div class="Featured-box">
-              <select name="FEATURED-FILTER" id="FEATURED-FILTER">
-                <option value="FEATURED">FEATURED</option>
-                <option value="BEST-SELLING">BEST SELLING</option>
-                <option value="ALPHABETICALLY-A-Z">ALPHABETICALLY, A-Z</option>
-                <option value="ALPHABETICALLY-Z-A">ALPHABETICALLY, Z-A</option>
-                <option value="PRICE-LOW-TO-HIGH">PRICE, LOW TO HIGH</option>
-                <option value="PRICE-HIGH-TO-LOW">PRICE, HIGH TO LOW</option>
-                <option value="DATE-OLD-TO-NEW">DATE, OLD TO NEW</option>
-                <option value="DATE-NEW-TO-OLD">DATE, NEW TO OLD</option>
-              </select>
+            <div class="card-content">
+              <p class="product-price">IVENTOS HALF SLEEVE WHITE T-SHIRT</p>
+              <p>₴500.00</p>
             </div>
           </div>
-        </div>
-      </div>
-      <div class="shop-page-card-section">
-        <div class="container">
-          <div class="shop-grid-card">
-            <!-- card 1 -->
-            <div class="card">
-              <div class="card-image">
-                <div class="img">
-                  <img
-                    src="./image/Product Images/shop-card-1-front.png"
-                    class="font-site"
-                    alt=""
-                  />
-                  <img
-                    src="./image/Product Images/shop-card-1-back.png"
-                    class="back-site"
-                    alt=""
-                  />
-                </div>
-                <div class="shop-card-site-bar-image">
-                  <div class="shop-side-card-image-group">
-                    <div class="image-site-bar-card">
-                      <div class="shop-card-left-top-border">
-                        <div class="shop-card-right-top-border">
-                          <div class="shop-card-left-bottom-border">
-                            <div class="shop-card-right-bottom-border">
-                              <img
-                                src="./image/Product Images/shop-card-v1-front.png"
-                                alt=""
-                              />
-                            </div>
+          <!-- card 2 -->
+          <div class="card">
+            <div class="card-image">
+              <div class="img">
+                <img src="./image/Product Images/shop-card-2-front.png" class="font-site" alt="" />
+                <img src="./image/Product Images/shop-card-2-back.png" class="back-site" alt="" />
+              </div>
+              <div class="shop-card-site-bar-image">
+                <div class="shop-side-card-image-group">
+                  <div class="image-site-bar-card">
+                    <div class="shop-card-left-top-border">
+                      <div class="shop-card-right-top-border">
+                        <div class="shop-card-left-bottom-border">
+                          <div class="shop-card-right-bottom-border">
+                            <img src="./image/Product Images/shop-card-v-2-front.png" alt="" />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="prd-Card_Option">
-                  <label class="prd-Card_Label fz-12_15">Quick Add</label>
+              </div>
+              <div class="prd-Card_Option">
+                <label class="prd-Card_Label fz-12_15">Quick Add</label>
 
-                  <div class="prd-Card_Buttons">
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XS</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">S</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">M</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">L</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XXL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">3XL</span>
-                    </button>
-                  </div>
-                </div>
-                <div class="shop-card-bookmark-icon">
-                  <svg
-                    viewBox="0 0 23 23"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
-                      fill="currentColor"
-                    ></path>
-                    <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
-                  </svg>
+                <div class="prd-Card_Buttons">
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XS</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">S</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">M</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">L</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XXL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">3XL</span>
+                  </button>
                 </div>
               </div>
-              <div class="card-content">
-                <p class="product-price">IVENTOS HALF SLEEVE WHITE T-SHIRT</p>
-                <p>₴500.00</p>
+              <div class="shop-card-bookmark-icon">
+                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
+                    fill="currentColor"></path>
+                  <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
+                </svg>
               </div>
             </div>
-            <!-- card 2 -->
-            <div class="card">
-              <div class="card-image">
-                <div class="img">
-                  <img
-                    src="./image/Product Images/shop-card-2-front.png"
-                    class="font-site"
-                    alt=""
-                  />
-                  <img
-                    src="./image/Product Images/shop-card-2-back.png"
-                    class="back-site"
-                    alt=""
-                  />
-                </div>
-                <div class="shop-card-site-bar-image">
-                  <div class="shop-side-card-image-group">
-                    <div class="image-site-bar-card">
-                      <div class="shop-card-left-top-border">
-                        <div class="shop-card-right-top-border">
-                          <div class="shop-card-left-bottom-border">
-                            <div class="shop-card-right-bottom-border">
-                              <img
-                                src="./image/Product Images/shop-card-v-2-front.png"
-                                alt=""
-                              />
-                            </div>
+            <div class="card-content">
+              <p class="product-price">IVENTOS HALF SLEEVE BLACK T-SHIRT</p>
+              <p>₴500.00</p>
+            </div>
+          </div>
+          <!-- card 3 -->
+          <div class="card">
+            <div class="card-image">
+              <div class="img">
+                <img src="./image/Product Images/shop-card-3-front.png" class="font-site" alt="" />
+                <img src="./image/Product Images/shop-card-3-back.png" class="back-site" alt="" />
+              </div>
+              <div class="shop-card-site-bar-image">
+                <div class="shop-side-card-image-group">
+                  <div class="image-site-bar-card">
+                    <div class="shop-card-left-top-border">
+                      <div class="shop-card-right-top-border">
+                        <div class="shop-card-left-bottom-border">
+                          <div class="shop-card-right-bottom-border">
+                            <img src="./image/Product Images/shop-card-v-3-back.png" alt="" />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="prd-Card_Option">
-                  <label class="prd-Card_Label fz-12_15">Quick Add</label>
+              </div>
+              <div class="prd-Card_Option">
+                <label class="prd-Card_Label fz-12_15">Quick Add</label>
 
-                  <div class="prd-Card_Buttons">
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XS</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">S</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">M</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">L</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XXL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">3XL</span>
-                    </button>
-                  </div>
-                </div>
-                <div class="shop-card-bookmark-icon">
-                  <svg
-                    viewBox="0 0 23 23"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
-                      fill="currentColor"
-                    ></path>
-                    <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
-                  </svg>
+                <div class="prd-Card_Buttons">
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XS</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">S</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">M</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">L</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XXL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">3XL</span>
+                  </button>
                 </div>
               </div>
-              <div class="card-content">
-                <p class="product-price">IVENTOS HALF SLEEVE BLACK T-SHIRT</p>
-                <p>₴500.00</p>
+              <div class="shop-card-bookmark-icon">
+                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
+                    fill="currentColor"></path>
+                  <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
+                </svg>
               </div>
             </div>
-            <!-- card 3 -->
-            <div class="card">
-              <div class="card-image">
-                <div class="img">
-                  <img
-                    src="./image/Product Images/shop-card-3-front.png"
-                    class="font-site"
-                    alt=""
-                  />
-                  <img
-                    src="./image/Product Images/shop-card-3-back.png"
-                    class="back-site"
-                    alt=""
-                  />
-                </div>
-                <div class="shop-card-site-bar-image">
-                  <div class="shop-side-card-image-group">
-                    <div class="image-site-bar-card">
-                      <div class="shop-card-left-top-border">
-                        <div class="shop-card-right-top-border">
-                          <div class="shop-card-left-bottom-border">
-                            <div class="shop-card-right-bottom-border">
-                              <img
-                                src="./image/Product Images/shop-card-v-3-back.png"
-                                alt=""
-                              />
-                            </div>
+            <div class="card-content">
+              <p class="product-price">IVENTOS HALF SLEEVE SALVER T-SHIRT</p>
+              <p>₴500.00</p>
+            </div>
+          </div>
+          <!-- card 4 -->
+          <div class="card">
+            <div class="card-image">
+              <div class="img">
+                <img src="./image/Product Images/shop-card-4-front.png" class="font-site" alt="" />
+                <img src="./image/Product Images/shop-card-4-back.png" class="back-site" alt="" />
+              </div>
+              <div class="shop-card-site-bar-image">
+                <div class="shop-side-card-image-group">
+                  <div class="image-site-bar-card">
+                    <div class="shop-card-left-top-border">
+                      <div class="shop-card-right-top-border">
+                        <div class="shop-card-left-bottom-border">
+                          <div class="shop-card-right-bottom-border">
+                            <img src="./image/Product Images/shop-card-v-4-back.png" alt="" />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="prd-Card_Option">
-                  <label class="prd-Card_Label fz-12_15">Quick Add</label>
+              </div>
+              <div class="prd-Card_Option">
+                <label class="prd-Card_Label fz-12_15">Quick Add</label>
 
-                  <div class="prd-Card_Buttons">
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XS</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">S</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">M</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">L</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XXL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">3XL</span>
-                    </button>
-                  </div>
-                </div>
-                <div class="shop-card-bookmark-icon">
-                  <svg
-                    viewBox="0 0 23 23"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
-                      fill="currentColor"
-                    ></path>
-                    <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
-                  </svg>
+                <div class="prd-Card_Buttons">
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XS</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">S</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">M</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">L</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XXL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">3XL</span>
+                  </button>
                 </div>
               </div>
-              <div class="card-content">
-                <p class="product-price">IVENTOS HALF SLEEVE SALVER T-SHIRT</p>
-                <p>₴500.00</p>
+              <div class="shop-card-bookmark-icon">
+                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
+                    fill="currentColor"></path>
+                  <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
+                </svg>
               </div>
             </div>
-            <!-- card 4 -->
-            <div class="card">
-              <div class="card-image">
-                <div class="img">
-                  <img
-                    src="./image/Product Images/shop-card-4-front.png"
-                    class="font-site"
-                    alt=""
-                  />
-                  <img
-                    src="./image/Product Images/shop-card-4-back.png"
-                    class="back-site"
-                    alt=""
-                  />
-                </div>
-                <div class="shop-card-site-bar-image">
-                  <div class="shop-side-card-image-group">
-                    <div class="image-site-bar-card">
-                      <div class="shop-card-left-top-border">
-                        <div class="shop-card-right-top-border">
-                          <div class="shop-card-left-bottom-border">
-                            <div class="shop-card-right-bottom-border">
-                              <img
-                                src="./image/Product Images/shop-card-v-4-back.png"
-                                alt=""
-                              />
-                            </div>
+            <div class="card-content">
+              <p class="product-price">IVENTOS NECK GAITERS</p>
+              <p>₴500.00</p>
+            </div>
+          </div>
+          <!-- card 5 -->
+          <div class="card">
+            <div class="card-image">
+              <div class="img">
+                <img src="./image/Product Images/shop-card-5-front.png" class="font-site" alt="" />
+                <img src="./image/Product Images/shop-card-5-back.png" class="back-site" alt="" />
+              </div>
+              <div class="shop-card-site-bar-image">
+                <div class="shop-side-card-image-group">
+                  <div class="image-site-bar-card">
+                    <div class="shop-card-left-top-border">
+                      <div class="shop-card-right-top-border">
+                        <div class="shop-card-left-bottom-border">
+                          <div class="shop-card-right-bottom-border">
+                            <img src="./image/Product Images/shop-card-v-5-back.png" alt="" />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="prd-Card_Option">
-                  <label class="prd-Card_Label fz-12_15">Quick Add</label>
+              </div>
+              <div class="prd-Card_Option">
+                <label class="prd-Card_Label fz-12_15">Quick Add</label>
 
-                  <div class="prd-Card_Buttons">
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XS</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">S</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">M</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">L</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XXL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">3XL</span>
-                    </button>
-                  </div>
-                </div>
-                <div class="shop-card-bookmark-icon">
-                  <svg
-                    viewBox="0 0 23 23"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
-                      fill="currentColor"
-                    ></path>
-                    <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
-                  </svg>
+                <div class="prd-Card_Buttons">
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XS</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">S</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">M</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">L</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XXL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">3XL</span>
+                  </button>
                 </div>
               </div>
-              <div class="card-content">
-                <p class="product-price">IVENTOS NECK GAITERS</p>
-                <p>₴500.00</p>
+              <div class="shop-card-bookmark-icon">
+                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
+                    fill="currentColor"></path>
+                  <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
+                </svg>
               </div>
             </div>
-            <!-- card 5 -->
-            <div class="card">
-              <div class="card-image">
-                <div class="img">
-                  <img
-                    src="./image/Product Images/shop-card-5-front.png"
-                    class="font-site"
-                    alt=""
-                  />
-                  <img
-                    src="./image/Product Images/shop-card-5-back.png"
-                    class="back-site"
-                    alt=""
-                  />
-                </div>
-                <div class="shop-card-site-bar-image">
-                  <div class="shop-side-card-image-group">
-                    <div class="image-site-bar-card">
-                      <div class="shop-card-left-top-border">
-                        <div class="shop-card-right-top-border">
-                          <div class="shop-card-left-bottom-border">
-                            <div class="shop-card-right-bottom-border">
-                              <img
-                                src="./image/Product Images/shop-card-v-5-back.png"
-                                alt=""
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="prd-Card_Option">
-                  <label class="prd-Card_Label fz-12_15">Quick Add</label>
-
-                  <div class="prd-Card_Buttons">
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XS</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">S</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">M</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">L</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XXL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">3XL</span>
-                    </button>
-                  </div>
-                </div>
-                <div class="shop-card-bookmark-icon">
-                  <svg
-                    viewBox="0 0 23 23"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
-                      fill="currentColor"
-                    ></path>
-                    <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
-                  </svg>
-                </div>
-              </div>
-              <div class="card-content">
-                <p class="product-price">IVENTOS HOODIE</p>
-                <p>₴2,000.00</p>
-              </div>
+            <div class="card-content">
+              <p class="product-price">IVENTOS HOODIE</p>
+              <p>₴2,000.00</p>
             </div>
-            <!-- card 6 -->
-            <div class="card">
-              <div class="card-image">
-                <div class="img">
-                  <img
-                    src="./image/Product Images/shop-card-6-front.png"
-                    class="font-site"
-                    alt=""
-                  />
-                  <img
-                    src="./image/Product Images/shop-card-6-front.png"
-                    class="back-site"
-                    alt=""
-                  />
-                </div>
-                <div class="shop-card-site-bar-image">
-                  <div class="shop-side-card-image-group">
-                    <!-- <div class="image-site-bar-card">
+          </div>
+          <!-- card 6 -->
+          <div class="card">
+            <div class="card-image">
+              <div class="img">
+                <img src="./image/Product Images/shop-card-6-front.png" class="font-site" alt="" />
+                <img src="./image/Product Images/shop-card-6-front.png" class="back-site" alt="" />
+              </div>
+              <div class="shop-card-site-bar-image">
+                <div class="shop-side-card-image-group">
+                  <!-- <div class="image-site-bar-card">
                       <div class="shop-card-left-top-border">
                         <div class="shop-card-right-top-border">
                           <div class="shop-card-left-bottom-border">
@@ -494,155 +385,122 @@
                         </div>
                       </div>
                     </div> -->
-                  </div>
-                </div>
-                <div class="prd-Card_Option">
-                  <label class="prd-Card_Label fz-12_15">Quick Add</label>
-
-                  <div class="prd-Card_Buttons">
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XS</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">S</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">M</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">L</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XXL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">3XL</span>
-                    </button>
-                  </div>
-                </div>
-                <div class="shop-card-bookmark-icon">
-                  <svg
-                    viewBox="0 0 23 23"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
-                      fill="currentColor"
-                    ></path>
-                    <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
-                  </svg>
                 </div>
               </div>
-              <div class="card-content">
-                <p class="product-price">IVENTOS PATCH CARRIER ACCESSORIES</p>
-                <p>₴4,000.00</p>
+              <div class="prd-Card_Option">
+                <label class="prd-Card_Label fz-12_15">Quick Add</label>
+
+                <div class="prd-Card_Buttons">
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XS</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">S</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">M</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">L</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XXL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">3XL</span>
+                  </button>
+                </div>
+              </div>
+              <div class="shop-card-bookmark-icon">
+                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
+                    fill="currentColor"></path>
+                  <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
+                </svg>
               </div>
             </div>
-            <!-- card 7 -->
-            <div class="card">
-              <div class="card-image">
-                <div class="img">
-                  <img
-                    src="./image/Product Images/shop-card-7-front.png"
-                    class="font-site"
-                    alt=""
-                  />
-                  <img
-                    src="./image/Product Images/shop-card-7-back.png"
-                    class="back-site"
-                    alt=""
-                  />
-                </div>
-                <div class="shop-card-site-bar-image">
-                  <div class="shop-side-card-image-group">
-                    <div class="image-site-bar-card">
-                      <div class="shop-card-left-top-border">
-                        <div class="shop-card-right-top-border">
-                          <div class="shop-card-left-bottom-border">
-                            <div class="shop-card-right-bottom-border">
-                              <img
-                                src="./image/Product Images/shop-card-v-7-front.png"
-                                alt=""
-                              />
-                            </div>
+            <div class="card-content">
+              <p class="product-price">IVENTOS PATCH CARRIER ACCESSORIES</p>
+              <p>₴4,000.00</p>
+            </div>
+          </div>
+          <!-- card 7 -->
+          <div class="card">
+            <div class="card-image">
+              <div class="img">
+                <img src="./image/Product Images/shop-card-7-front.png" class="font-site" alt="" />
+                <img src="./image/Product Images/shop-card-7-back.png" class="back-site" alt="" />
+              </div>
+              <div class="shop-card-site-bar-image">
+                <div class="shop-side-card-image-group">
+                  <div class="image-site-bar-card">
+                    <div class="shop-card-left-top-border">
+                      <div class="shop-card-right-top-border">
+                        <div class="shop-card-left-bottom-border">
+                          <div class="shop-card-right-bottom-border">
+                            <img src="./image/Product Images/shop-card-v-7-front.png" alt="" />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="prd-Card_Option">
-                  <label class="prd-Card_Label fz-12_15">Quick Add</label>
+              </div>
+              <div class="prd-Card_Option">
+                <label class="prd-Card_Label fz-12_15">Quick Add</label>
 
-                  <div class="prd-Card_Buttons">
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XS</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">S</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">M</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">L</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XXL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">3XL</span>
-                    </button>
-                  </div>
-                </div>
-                <div class="shop-card-bookmark-icon">
-                  <svg
-                    viewBox="0 0 23 23"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
-                      fill="currentColor"
-                    ></path>
-                    <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
-                  </svg>
+                <div class="prd-Card_Buttons">
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XS</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">S</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">M</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">L</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XXL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">3XL</span>
+                  </button>
                 </div>
               </div>
-              <div class="card-content">
-                <p class="product-price">IVENTOS NECK GAITERS</p>
-                <p>₴500.00</p>
+              <div class="shop-card-bookmark-icon">
+                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
+                    fill="currentColor"></path>
+                  <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
+                </svg>
               </div>
             </div>
-            <!-- card 8 -->
-            <div class="card">
-              <div class="card-image">
-                <div class="img">
-                  <img
-                    src="./image/Product Images/shop-card-8-front.png"
-                    class="font-site"
-                    alt=""
-                  />
-                  <img
-                    src="./image/Product Images/shop-card-8-front.png"
-                    class="back-site"
-                    alt=""
-                  />
-                </div>
-                <div class="shop-card-site-bar-image">
-                  <div class="shop-side-card-image-group">
-                    <!-- <div class="image-site-bar-card">
+            <div class="card-content">
+              <p class="product-price">IVENTOS NECK GAITERS</p>
+              <p>₴500.00</p>
+            </div>
+          </div>
+          <!-- card 8 -->
+          <div class="card">
+            <div class="card-image">
+              <div class="img">
+                <img src="./image/Product Images/shop-card-8-front.png" class="font-site" alt="" />
+                <img src="./image/Product Images/shop-card-8-front.png" class="back-site" alt="" />
+              </div>
+              <div class="shop-card-site-bar-image">
+                <div class="shop-side-card-image-group">
+                  <!-- <div class="image-site-bar-card">
                       <div class="shop-card-left-top-border">
                         <div class="shop-card-right-top-border">
                           <div class="shop-card-left-bottom-border">
@@ -656,567 +514,754 @@
                         </div>
                       </div>
                     </div> -->
-                  </div>
-                </div>
-                <div class="prd-Card_Option">
-                  <label class="prd-Card_Label fz-12_15">Quick Add</label>
-
-                  <div class="prd-Card_Buttons">
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XS</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">S</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">M</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">L</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XXL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">3XL</span>
-                    </button>
-                  </div>
-                </div>
-                <div class="shop-card-bookmark-icon">
-                  <svg
-                    viewBox="0 0 23 23"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
-                      fill="currentColor"
-                    ></path>
-                    <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
-                  </svg>
                 </div>
               </div>
-              <div class="card-content">
-                <p class="product-price">IVENTOS PATCH</p>
-                <p>₴200.00</p>
+              <div class="prd-Card_Option">
+                <label class="prd-Card_Label fz-12_15">Quick Add</label>
+
+                <div class="prd-Card_Buttons">
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XS</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">S</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">M</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">L</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XXL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">3XL</span>
+                  </button>
+                </div>
+              </div>
+              <div class="shop-card-bookmark-icon">
+                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
+                    fill="currentColor"></path>
+                  <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
+                </svg>
               </div>
             </div>
-            <!-- card 9 -->
-            <div class="card">
-              <div class="card-image">
-                <div class="img">
-                  <img
-                    src="./image/Product Images/shop-card-9-front.png"
-                    class="font-site"
-                    alt=""
-                  />
-                  <img
-                    src="./image/Product Images/shop-card-9-back.png"
-                    class="back-site"
-                    alt=""
-                  />
-                </div>
-                <div class="shop-card-site-bar-image">
-                  <div class="shop-side-card-image-group">
-                    <div class="image-site-bar-card">
-                      <div class="shop-card-left-top-border">
-                        <div class="shop-card-right-top-border">
-                          <div class="shop-card-left-bottom-border">
-                            <div class="shop-card-right-bottom-border">
-                              <img
-                                src="./image/Product Images/shop-card-v-9-back.png"
-                                alt=""
-                              />
-                            </div>
+            <div class="card-content">
+              <p class="product-price">IVENTOS PATCH</p>
+              <p>₴200.00</p>
+            </div>
+          </div>
+          <!-- card 9 -->
+          <div class="card">
+            <div class="card-image">
+              <div class="img">
+                <img src="./image/Product Images/shop-card-9-front.png" class="font-site" alt="" />
+                <img src="./image/Product Images/shop-card-9-back.png" class="back-site" alt="" />
+              </div>
+              <div class="shop-card-site-bar-image">
+                <div class="shop-side-card-image-group">
+                  <div class="image-site-bar-card">
+                    <div class="shop-card-left-top-border">
+                      <div class="shop-card-right-top-border">
+                        <div class="shop-card-left-bottom-border">
+                          <div class="shop-card-right-bottom-border">
+                            <img src="./image/Product Images/shop-card-v-9-back.png" alt="" />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="prd-Card_Option">
-                  <label class="prd-Card_Label fz-12_15">Quick Add</label>
+              </div>
+              <div class="prd-Card_Option">
+                <label class="prd-Card_Label fz-12_15">Quick Add</label>
 
-                  <div class="prd-Card_Buttons">
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XS</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">S</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">M</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">L</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XXL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">3XL</span>
-                    </button>
-                  </div>
-                </div>
-                <div class="shop-card-bookmark-icon">
-                  <svg
-                    viewBox="0 0 23 23"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
-                      fill="currentColor"
-                    ></path>
-                    <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
-                  </svg>
+                <div class="prd-Card_Buttons">
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XS</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">S</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">M</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">L</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XXL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">3XL</span>
+                  </button>
                 </div>
               </div>
-              <div class="card-content">
-                <p class="product-price">
-                  IVENTOS WOODEN WALL HANGING WARRIOR RACK
-                </p>
-                <p>₴21,000.00</p>
+              <div class="shop-card-bookmark-icon">
+                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
+                    fill="currentColor"></path>
+                  <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
+                </svg>
               </div>
             </div>
-            <!-- card 10 -->
-            <div class="card">
-              <div class="card-image">
-                <div class="img">
-                  <img
-                    src="./image/Product Images/shop-card-10-front.png"
-                    class="font-site"
-                    alt=""
-                  />
-                  <img
-                    src="./image/Product Images/shop-card-10-back.png"
-                    class="back-site"
-                    alt=""
-                  />
-                </div>
-                <div class="shop-card-site-bar-image">
-                  <div class="shop-side-card-image-group">
-                    <div class="image-site-bar-card">
-                      <div class="shop-card-left-top-border">
-                        <div class="shop-card-right-top-border">
-                          <div class="shop-card-left-bottom-border">
-                            <div class="shop-card-right-bottom-border">
-                              <img
-                                src="./image/Product Images/shop-card-v-10-back.png"
-                                alt=""
-                              />
-                            </div>
+            <div class="card-content">
+              <p class="product-price">
+                IVENTOS WOODEN WALL HANGING WARRIOR RACK
+              </p>
+              <p>₴21,000.00</p>
+            </div>
+          </div>
+          <!-- card 10 -->
+          <div class="card">
+            <div class="card-image">
+              <div class="img">
+                <img src="./image/Product Images/shop-card-10-front.png" class="font-site" alt="" />
+                <img src="./image/Product Images/shop-card-10-back.png" class="back-site" alt="" />
+              </div>
+              <div class="shop-card-site-bar-image">
+                <div class="shop-side-card-image-group">
+                  <div class="image-site-bar-card">
+                    <div class="shop-card-left-top-border">
+                      <div class="shop-card-right-top-border">
+                        <div class="shop-card-left-bottom-border">
+                          <div class="shop-card-right-bottom-border">
+                            <img src="./image/Product Images/shop-card-v-10-back.png" alt="" />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="prd-Card_Option">
-                  <label class="prd-Card_Label fz-12_15">Quick Add</label>
+              </div>
+              <div class="prd-Card_Option">
+                <label class="prd-Card_Label fz-12_15">Quick Add</label>
 
-                  <div class="prd-Card_Buttons">
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XS</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">S</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">M</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">L</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XXL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">3XL</span>
-                    </button>
-                  </div>
-                </div>
-                <div class="shop-card-bookmark-icon">
-                  <svg
-                    viewBox="0 0 23 23"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
-                      fill="currentColor"
-                    ></path>
-                    <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
-                  </svg>
+                <div class="prd-Card_Buttons">
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XS</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">S</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">M</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">L</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XXL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">3XL</span>
+                  </button>
                 </div>
               </div>
-              <div class="card-content">
-                <p class="product-price">
-                  IVENTOS WOODEN MILITARY VALUES AMMO BOX - 2
-                </p>
-                <p>₴8,500.00</p>
+              <div class="shop-card-bookmark-icon">
+                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
+                    fill="currentColor"></path>
+                  <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
+                </svg>
               </div>
             </div>
-            <!-- card 11 -->
-            <div class="card">
-              <div class="card-image">
-                <div class="img">
-                  <img
-                    src="./image/Product Images/shop-card-11-front.png"
-                    class="font-site"
-                    alt=""
-                  />
-                  <img
-                    src="./image/Product Images/shop-card-11-back.png"
-                    class="back-site"
-                    alt=""
-                  />
-                </div>
-                <div class="shop-card-site-bar-image">
-                  <div class="shop-side-card-image-group">
-                    <div class="image-site-bar-card">
-                      <div class="shop-card-left-top-border">
-                        <div class="shop-card-right-top-border">
-                          <div class="shop-card-left-bottom-border">
-                            <div class="shop-card-right-bottom-border">
-                              <img
-                                src="./image/Product Images/shop-card-v-11-front.png"
-                                alt=""
-                              />
-                            </div>
+            <div class="card-content">
+              <p class="product-price">
+                IVENTOS WOODEN MILITARY VALUES AMMO BOX - 2
+              </p>
+              <p>₴8,500.00</p>
+            </div>
+          </div>
+          <!-- card 11 -->
+          <div class="card">
+            <div class="card-image">
+              <div class="img">
+                <img src="./image/Product Images/shop-card-11-front.png" class="font-site" alt="" />
+                <img src="./image/Product Images/shop-card-11-back.png" class="back-site" alt="" />
+              </div>
+              <div class="shop-card-site-bar-image">
+                <div class="shop-side-card-image-group">
+                  <div class="image-site-bar-card">
+                    <div class="shop-card-left-top-border">
+                      <div class="shop-card-right-top-border">
+                        <div class="shop-card-left-bottom-border">
+                          <div class="shop-card-right-bottom-border">
+                            <img src="./image/Product Images/shop-card-v-11-front.png" alt="" />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="prd-Card_Option">
-                  <label class="prd-Card_Label fz-12_15">Quick Add</label>
+              </div>
+              <div class="prd-Card_Option">
+                <label class="prd-Card_Label fz-12_15">Quick Add</label>
 
-                  <div class="prd-Card_Buttons">
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XS</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">S</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">M</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">L</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XXL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">3XL</span>
-                    </button>
-                  </div>
-                </div>
-                <div class="shop-card-bookmark-icon">
-                  <svg
-                    viewBox="0 0 23 23"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
-                      fill="currentColor"
-                    ></path>
-                    <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
-                  </svg>
+                <div class="prd-Card_Buttons">
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XS</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">S</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">M</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">L</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XXL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">3XL</span>
+                  </button>
                 </div>
               </div>
-              <div class="card-content">
-                <p class="product-price">
-                  IVENTOS WOODEN MILITARY VALUES AMMO BOX
-                </p>
-                <p>₴8,500.00</p>
+              <div class="shop-card-bookmark-icon">
+                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
+                    fill="currentColor"></path>
+                  <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
+                </svg>
               </div>
             </div>
-            <!-- card 12 -->
-            <div class="card">
-              <div class="card-image">
-                <div class="img">
-                  <img
-                    src="./image/Product Images/shop-card-12-front.png"
-                    class="font-site"
-                    alt=""
-                  />
-                  <img
-                    src="./image/Product Images/shop-card-12-back.png"
-                    class="back-site"
-                    alt=""
-                  />
-                </div>
-                <div class="shop-card-site-bar-image">
-                  <div class="shop-side-card-image-group">
-                    <div class="image-site-bar-card">
-                      <div class="shop-card-left-top-border">
-                        <div class="shop-card-right-top-border">
-                          <div class="shop-card-left-bottom-border">
-                            <div class="shop-card-right-bottom-border">
-                              <img
-                                src="./image/Product Images/shop-card-v-12-front.png"
-                                alt=""
-                              />
-                            </div>
+            <div class="card-content">
+              <p class="product-price">
+                IVENTOS WOODEN MILITARY VALUES AMMO BOX
+              </p>
+              <p>₴8,500.00</p>
+            </div>
+          </div>
+          <!-- card 12 -->
+          <div class="card">
+            <div class="card-image">
+              <div class="img">
+                <img src="./image/Product Images/shop-card-12-front.png" class="font-site" alt="" />
+                <img src="./image/Product Images/shop-card-12-back.png" class="back-site" alt="" />
+              </div>
+              <div class="shop-card-site-bar-image">
+                <div class="shop-side-card-image-group">
+                  <div class="image-site-bar-card">
+                    <div class="shop-card-left-top-border">
+                      <div class="shop-card-right-top-border">
+                        <div class="shop-card-left-bottom-border">
+                          <div class="shop-card-right-bottom-border">
+                            <img src="./image/Product Images/shop-card-v-12-front.png" alt="" />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="prd-Card_Option">
-                  <label class="prd-Card_Label fz-12_15">Quick Add</label>
+              </div>
+              <div class="prd-Card_Option">
+                <label class="prd-Card_Label fz-12_15">Quick Add</label>
 
-                  <div class="prd-Card_Buttons">
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XS</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">S</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">M</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">L</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XXL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">3XL</span>
-                    </button>
-                  </div>
-                </div>
-                <div class="shop-card-bookmark-icon">
-                  <svg
-                    viewBox="0 0 23 23"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
-                      fill="currentColor"
-                    ></path>
-                    <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
-                  </svg>
+                <div class="prd-Card_Buttons">
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XS</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">S</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">M</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">L</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XXL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">3XL</span>
+                  </button>
                 </div>
               </div>
-              <div class="card-content">
-                <p class="product-price">
-                  IVENTOSE WOODEN MILITARY VALUES AMMO BOX -3
-                </p>
-                <p>₴8,500.00</p>
+              <div class="shop-card-bookmark-icon">
+                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
+                    fill="currentColor"></path>
+                  <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
+                </svg>
               </div>
             </div>
-            <!-- card 13 -->
-            <div class="card">
-              <div class="card-image">
-                <div class="img">
-                  <img
-                    src="./image/Product Images/shop-card-13-front.png"
-                    class="font-site"
-                    alt=""
-                  />
-                  <img
-                    src="./image/Product Images/shop-card-13-back.png"
-                    class="back-site"
-                    alt=""
-                  />
-                </div>
-                <div class="shop-card-site-bar-image">
-                  <div class="shop-side-card-image-group">
-                    <div class="image-site-bar-card">
-                      <div class="shop-card-left-top-border">
-                        <div class="shop-card-right-top-border">
-                          <div class="shop-card-left-bottom-border">
-                            <div class="shop-card-right-bottom-border">
-                              <img
-                                src="./image/Product Images/shop-card-v-13-front.png"
-                                alt=""
-                              />
-                            </div>
+            <div class="card-content">
+              <p class="product-price">
+                IVENTOSE WOODEN MILITARY VALUES AMMO BOX -3
+              </p>
+              <p>₴8,500.00</p>
+            </div>
+          </div>
+          <!-- card 13 -->
+          <div class="card">
+            <div class="card-image">
+              <div class="img">
+                <img src="./image/Product Images/shop-card-13-front.png" class="font-site" alt="" />
+                <img src="./image/Product Images/shop-card-13-back.png" class="back-site" alt="" />
+              </div>
+              <div class="shop-card-site-bar-image">
+                <div class="shop-side-card-image-group">
+                  <div class="image-site-bar-card">
+                    <div class="shop-card-left-top-border">
+                      <div class="shop-card-right-top-border">
+                        <div class="shop-card-left-bottom-border">
+                          <div class="shop-card-right-bottom-border">
+                            <img src="./image/Product Images/shop-card-v-13-front.png" alt="" />
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="prd-Card_Option">
-                  <label class="prd-Card_Label fz-12_15">Quick Add</label>
+              </div>
+              <div class="prd-Card_Option">
+                <label class="prd-Card_Label fz-12_15">Quick Add</label>
 
-                  <div class="prd-Card_Buttons">
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XS</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">S</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">M</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">L</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">XXL</span>
-                    </button>
-                    <button class="card-sizeing-button">
-                      <span class="prd-Card_Button-inner">3XL</span>
-                    </button>
-                  </div>
-                </div>
-                <div class="shop-card-bookmark-icon">
-                  <svg
-                    viewBox="0 0 23 23"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
-                      fill="currentColor"
-                    ></path>
-                    <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
-                  </svg>
+                <div class="prd-Card_Buttons">
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XS</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">S</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">M</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">L</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">XXL</span>
+                  </button>
+                  <button class="card-sizeing-button">
+                    <span class="prd-Card_Button-inner">3XL</span>
+                  </button>
                 </div>
               </div>
-              <div class="card-content">
-                <p class="product-price">
-                  IVENTOS WOODEN MILITARY VALUES AMMO BOX -4
-                </p>
-                <p>₴8,500.00</p>
+              <div class="shop-card-bookmark-icon">
+                <svg viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M16.13 8.186V6.814l3.508-3.726-.08-.088H7v9h12.345l.208-.178-3.424-3.636zM21 11.9L19.714 13H6V2h14l1 1.1-4.143 4.4L21 11.9z"
+                    fill="currentColor"></path>
+                  <path d="M3 2h1v19H3V2z" fill="currentColor"></path>
+                </svg>
               </div>
+            </div>
+            <div class="card-content">
+              <p class="product-price">
+                IVENTOS WOODEN MILITARY VALUES AMMO BOX -4
+              </p>
+              <p>₴8,500.00</p>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    <section>
-      <section class="_product">
-        <div class="_product_content_wrap">
-          <div class="_product_card">
-            <img src="./image/Background Using Image/_MG_5996.jpg" alt="image" />
-            <div class="_product_card_content">
-              <h2>Flannel Shirts</h2>
-              <a href="#" class="hero-btn btn-secondary">
-                <span class="hero-btn-text">SHOP NOW</span>
-    
-                <span class="hero-btn-icon">
-    
-                  <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M4 2C4 2.53043 3.78929 3.03914 3.41421 3.41421C3.03914 3.78929 2.53043 4 2 4C1.46957 4 0.960859 3.78929 0.585786 3.41421C0.210714 3.03914 0 2.53043 0 2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0C2.53043 0 3.03914 0.210714 3.41421 0.585786C3.78929 0.960859 4 1.46957 4 2ZM4 10C4 10.5304 3.78929 11.0391 3.41421 11.4142C3.03914 11.7893 2.53043 12 2 12C1.46957 12 0.960859 11.7893 0.585786 11.4142C0.210714 11.0391 0 10.5304 0 10C0 9.46957 0.210714 8.96086 0.585786 8.58579C0.960859 8.21071 1.46957 8 2 8C2.53043 8 3.03914 8.21071 3.41421 8.58579C3.78929 8.96086 4 9.46957 4 10ZM10 6C10 6.53043 9.78929 7.03914 9.41421 7.41421C9.03914 7.78929 8.53043 8 8 8C7.46957 8 6.96086 7.78929 6.58579 7.41421C6.21071 7.03914 6 6.53043 6 6C6 5.46957 6.21071 4.96086 6.58579 4.58579C6.96086 4.21071 7.46957 4 8 4C8.53043 4 9.03914 4.21071 9.41421 4.58579C9.78929 4.96086 10 5.46957 10 6Z"
-                      fill="#7B7356" />
-                  </svg>
-    
-              </a>
-              <!-- <button type="button">shop Now</button> -->
-            </div>
-          </div>
-          <div class="_product_card">
-            <img src="./image/Background Using Image/_MG_6013.jpg" alt="image" />
-            <div class="_product_card_content">
-              <h2>Soft Shells</h2>
-              <a href="#" class="btn-secondary">
-                <span class="hero-btn-text">SHOP NOW</span>
-    
-    
-                  <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path
-                      d="M4 2C4 2.53043 3.78929 3.03914 3.41421 3.41421C3.03914 3.78929 2.53043 4 2 4C1.46957 4 0.960859 3.78929 0.585786 3.41421C0.210714 3.03914 0 2.53043 0 2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0C2.53043 0 3.03914 0.210714 3.41421 0.585786C3.78929 0.960859 4 1.46957 4 2ZM4 10C4 10.5304 3.78929 11.0391 3.41421 11.4142C3.03914 11.7893 2.53043 12 2 12C1.46957 12 0.960859 11.7893 0.585786 11.4142C0.210714 11.0391 0 10.5304 0 10C0 9.46957 0.210714 8.96086 0.585786 8.58579C0.960859 8.21071 1.46957 8 2 8C2.53043 8 3.03914 8.21071 3.41421 8.58579C3.78929 8.96086 4 9.46957 4 10ZM10 6C10 6.53043 9.78929 7.03914 9.41421 7.41421C9.03914 7.78929 8.53043 8 8 8C7.46957 8 6.96086 7.78929 6.58579 7.41421C6.21071 7.03914 6 6.53043 6 6C6 5.46957 6.21071 4.96086 6.58579 4.58579C6.96086 4.21071 7.46957 4 8 4C8.53043 4 9.03914 4.21071 9.41421 4.58579C9.78929 4.96086 10 5.46957 10 6Z"
-                      fill="#7B7356" />
-                  </svg>
-    
-              </a>
-              <!-- <button type="button">shop Now</button> -->
-            </div>
+    </div>
+  </section>
+  <section>
+    <section class="_product">
+      <div class="_product_content_wrap">
+        <div class="_product_card">
+          <img src="./image/Background Using Image/_MG_5996.jpg" alt="image" />
+          <div class="_product_card_content">
+            <h2>Flannel Shirts</h2>
+            <a href="#" class="hero-btn btn-secondary">
+              <span class="hero-btn-text">SHOP NOW</span>
+
+              <span class="hero-btn-icon">
+
+                <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M4 2C4 2.53043 3.78929 3.03914 3.41421 3.41421C3.03914 3.78929 2.53043 4 2 4C1.46957 4 0.960859 3.78929 0.585786 3.41421C0.210714 3.03914 0 2.53043 0 2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0C2.53043 0 3.03914 0.210714 3.41421 0.585786C3.78929 0.960859 4 1.46957 4 2ZM4 10C4 10.5304 3.78929 11.0391 3.41421 11.4142C3.03914 11.7893 2.53043 12 2 12C1.46957 12 0.960859 11.7893 0.585786 11.4142C0.210714 11.0391 0 10.5304 0 10C0 9.46957 0.210714 8.96086 0.585786 8.58579C0.960859 8.21071 1.46957 8 2 8C2.53043 8 3.03914 8.21071 3.41421 8.58579C3.78929 8.96086 4 9.46957 4 10ZM10 6C10 6.53043 9.78929 7.03914 9.41421 7.41421C9.03914 7.78929 8.53043 8 8 8C7.46957 8 6.96086 7.78929 6.58579 7.41421C6.21071 7.03914 6 6.53043 6 6C6 5.46957 6.21071 4.96086 6.58579 4.58579C6.96086 4.21071 7.46957 4 8 4C8.53043 4 9.03914 4.21071 9.41421 4.58579C9.78929 4.96086 10 5.46957 10 6Z"
+                    fill="#7B7356" />
+                </svg>
+
+            </a>
+            <!-- <button type="button">shop Now</button> -->
           </div>
         </div>
-      </section>
-    </section>
-    <section class="faq-section">
-      <div class="container">
-        <div class="accordion-wrapper">
-          <h2 class="section-title">FAQ'S</h2>
-          <div class="accordion">
-            <input type="checkbox" name="radio-a" class="faq-input" id="check1" >
-            <label class="accordion-label" for="check1"> What is a Qualified Property Investment Advisor?</label>
-            <div class="accordion-content">
-              <p>It is a designation from the Property Investment Professionals of Australia (PIPA). It signifies expertise in property investment advice, ensuring clients receive specialised guidance tailored to their investment goals. QPIA’s must also uphold PIPA’s code of conduct. Currently there are less than 20 QPIA accredited mortgage brokers.  &#128522;</p>
-            </div>
+        <div class="_product_card">
+          <img src="./image/Background Using Image/_MG_6013.jpg" alt="image" />
+          <div class="_product_card_content">
+            <h2>Soft Shells</h2>
+            <a href="#" class="btn-secondary">
+              <span class="hero-btn-text">SHOP NOW</span>
+
+
+              <svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M4 2C4 2.53043 3.78929 3.03914 3.41421 3.41421C3.03914 3.78929 2.53043 4 2 4C1.46957 4 0.960859 3.78929 0.585786 3.41421C0.210714 3.03914 0 2.53043 0 2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0C2.53043 0 3.03914 0.210714 3.41421 0.585786C3.78929 0.960859 4 1.46957 4 2ZM4 10C4 10.5304 3.78929 11.0391 3.41421 11.4142C3.03914 11.7893 2.53043 12 2 12C1.46957 12 0.960859 11.7893 0.585786 11.4142C0.210714 11.0391 0 10.5304 0 10C0 9.46957 0.210714 8.96086 0.585786 8.58579C0.960859 8.21071 1.46957 8 2 8C2.53043 8 3.03914 8.21071 3.41421 8.58579C3.78929 8.96086 4 9.46957 4 10ZM10 6C10 6.53043 9.78929 7.03914 9.41421 7.41421C9.03914 7.78929 8.53043 8 8 8C7.46957 8 6.96086 7.78929 6.58579 7.41421C6.21071 7.03914 6 6.53043 6 6C6 5.46957 6.21071 4.96086 6.58579 4.58579C6.96086 4.21071 7.46957 4 8 4C8.53043 4 9.03914 4.21071 9.41421 4.58579C9.78929 4.96086 10 5.46957 10 6Z"
+                  fill="#7B7356" />
+              </svg>
+
+            </a>
+            <!-- <button type="button">shop Now</button> -->
           </div>
-          <div class="accordion">
-            <input type="checkbox" name="radio-a" class="faq-input" id="check2">
-            <label class="accordion-label" for="check2"> What is the best investment strategy?</label>
-            <div class="accordion-content">
-              <p>Long answer short: the one you can stick to that supports your long term goals. Tactics such as debt recycling, negative/positive gearing, manufacturing equity can all yield great results. The best thing to do is book a free strategy session and get some clarity. 
-        </p>
-            </div>
-          </div>
-          <div class="accordion">
-            <input type="checkbox" name="radio-a" class="faq-input" id="check3">
-            <label class="accordion-label" for="check3"> Is a 95% loan approval rate good?</label>
-            <div class="accordion-content">
-              <p>Between brokers and banks a total of 40% of home loan applications are declined. Our systems and processes are built to maximise your chance of approval first time.   </p>
-            </div>
-          </div>
-        <div class="accordion">
-            <input type="checkbox" name="radio-a" class="faq-input" id="check4">
-            <label class="accordion-label" for="check4"> I am outside of Adelaide. Can we work together?</label>
-            <div class="accordion-content">
-              <p>Definitely! We are fully digital so we can work toward your property goals while you are in your PJ’s. </p>
-            </div>
-          </div>
-        <div class="accordion">
-            <input type="checkbox" name="radio-a" class="faq-input" id="check5">
-            <label class="accordion-label" for="check5"> I am a first time buyer. Will you work with me? </label>
-            <div class="accordion-content">
-              <p>We have helped many first home buyers achieve their property drea. Scroll up and hear directly from Rachelle and Nath or Arianna who were both first time buyers. </p>
-          </div>  
-        
-      </div>
+        </div>
       </div>
     </section>
-    <!-- script cdn font awesome  -->
-    <script
-      src="https://kit.fontawesome.com/253828a4b7.js"
-      crossorigin="anonymous"
-    ></script>
-    
+  </section>
+  <section class="faq-section">
+    <div class="container">
+      <div class="accordion-wrapper">
+        <h2 class="section-title">FAQ'S</h2>
+        <div class="accordion">
+          <input type="checkbox" name="radio-a" class="faq-input" id="check1">
+          <label class="accordion-label" for="check1"> What is a Qualified Property Investment Advisor?</label>
+          <div class="accordion-content">
+            <p>It is a designation from the Property Investment Professionals of Australia (PIPA). It signifies
+              expertise in property investment advice, ensuring clients receive specialised guidance tailored to their
+              investment goals. QPIA’s must also uphold PIPA’s code of conduct. Currently there are less than 20 QPIA
+              accredited mortgage brokers. &#128522;</p>
+          </div>
+        </div>
+        <div class="accordion">
+          <input type="checkbox" name="radio-a" class="faq-input" id="check2">
+          <label class="accordion-label" for="check2"> What is the best investment strategy?</label>
+          <div class="accordion-content">
+            <p>Long answer short: the one you can stick to that supports your long term goals. Tactics such as debt
+              recycling, negative/positive gearing, manufacturing equity can all yield great results. The best thing to
+              do is book a free strategy session and get some clarity.
+            </p>
+          </div>
+        </div>
+        <div class="accordion">
+          <input type="checkbox" name="radio-a" class="faq-input" id="check3">
+          <label class="accordion-label" for="check3"> Is a 95% loan approval rate good?</label>
+          <div class="accordion-content">
+            <p>Between brokers and banks a total of 40% of home loan applications are declined. Our systems and
+              processes are built to maximise your chance of approval first time. </p>
+          </div>
+        </div>
+        <div class="accordion">
+          <input type="checkbox" name="radio-a" class="faq-input" id="check4">
+          <label class="accordion-label" for="check4"> I am outside of Adelaide. Can we work together?</label>
+          <div class="accordion-content">
+            <p>Definitely! We are fully digital so we can work toward your property goals while you are in your PJ’s.
+            </p>
+          </div>
+        </div>
+        <div class="accordion">
+          <input type="checkbox" name="radio-a" class="faq-input" id="check5">
+          <label class="accordion-label" for="check5"> I am a first time buyer. Will you work with me? </label>
+          <div class="accordion-content">
+            <p>We have helped many first home buyers achieve their property drea. Scroll up and hear directly from
+              Rachelle and Nath or Arianna who were both first time buyers. </p>
+          </div>
+
+        </div>
+      </div>
+  </section>
+  <!-- testimonial -->
+  <section class="testimonial">
+    <div class="container">
+      <div class="testimonial-container">
+        <div class="testimonial-card">
+          <h2 class="testimonial-card-title">Excellent</h2>
+          <div class="testimonial-card-ratting-image">
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star"></i>
+            <i class="fa-solid fa-star-half"></i>
+          </div>
+          <p class="testimonial-card-description">
+            Based on <span>8,163 review</span>
+          </p>
+          <div class="testimonial-trustpilot">
+            <i class="fa-solid fa-star"></i>
+            <span>Trustpilot</span>
+          </div>
+        </div>
+        <div class="testimonial-slider-container">
+          <div class="_sliders_">
+            <div class="slider-content">
+              <!-- card 1 -->
+              <div class="testimonial-slide-card-inner">
+                <div class="testimonials-slider-card">
+                  <div class="testimonials-slider-card-top-bar">
+                    <div class="testimonials-slider-card-icon-star-group">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonials-slider-card-icon-verified">
+                      <i class="fa-solid fa-check"></i>
+                      <span>verified</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>it was the right choice to my fathers burial. thank you..</h4>
+                    <p>it was the right choice to my fathers burial. thank you..</p>
+                  </div>
+                  <div>
+                    <span class="testimonial-bold-text">Jan Hoffmann,</span>
+                    <span>3 hours ago</span>
+                  </div>
+                </div>
+              </div>
+              <!-- card 1 -->
+              <div class="testimonial-slide-card-inner">
+                <div class="testimonials-slider-card">
+                  <div class="testimonials-slider-card-top-bar">
+                    <div class="testimonials-slider-card-icon-star-group">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonials-slider-card-icon-verified">
+                      <i class="fa-solid fa-check"></i>
+                      <span>verified</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>it was the right choice to my fathers burial. thank you..</h4>
+                    <p>it was the right choice to my fathers burial. thank you..</p>
+                  </div>
+                  <div>
+                    <span class="testimonial-bold-text">Jan Hoffmann,</span>
+                    <span>3 hours ago</span>
+                  </div>
+                </div>
+              </div>
+              <!-- card 1 -->
+              <div class="testimonial-slide-card-inner">
+                <div class="testimonials-slider-card">
+                  <div class="testimonials-slider-card-top-bar">
+                    <div class="testimonials-slider-card-icon-star-group">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonials-slider-card-icon-verified">
+                      <i class="fa-solid fa-check"></i>
+                      <span>verified</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>it was the right choice to my fathers burial. thank you..</h4>
+                    <p>it was the right choice to my fathers burial. thank you..</p>
+                  </div>
+                  <div>
+                    <span class="testimonial-bold-text">Jan Hoffmann,</span>
+                    <span>3 hours ago</span>
+                  </div>
+                </div>
+              </div>
+              <!-- card 1 -->
+              <div class="testimonial-slide-card-inner">
+                <div class="testimonials-slider-card">
+                  <div class="testimonials-slider-card-top-bar">
+                    <div class="testimonials-slider-card-icon-star-group">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonials-slider-card-icon-verified">
+                      <i class="fa-solid fa-check"></i>
+                      <span>verified</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>it was the right choice to my fathers burial. thank you..</h4>
+                    <p>it was the right choice to my fathers burial. thank you..</p>
+                  </div>
+                  <div>
+                    <span class="testimonial-bold-text">Jan Hoffmann,</span>
+                    <span>3 hours ago</span>
+                  </div>
+                </div>
+              </div>
+              <!-- card 1 -->
+              <div class="testimonial-slide-card-inner">
+                <div class="testimonials-slider-card">
+                  <div class="testimonials-slider-card-top-bar">
+                    <div class="testimonials-slider-card-icon-star-group">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonials-slider-card-icon-verified">
+                      <i class="fa-solid fa-check"></i>
+                      <span>verified</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>it was the right choice to my fathers burial. thank you..</h4>
+                    <p>it was the right choice to my fathers burial. thank you..</p>
+                  </div>
+                  <div>
+                    <span class="testimonial-bold-text">Jan Hoffmann,</span>
+                    <span>3 hours ago</span>
+                  </div>
+                </div>
+              </div>
+              <!-- card 1 -->
+              <div class="testimonial-slide-card-inner">
+                <div class="testimonials-slider-card">
+                  <div class="testimonials-slider-card-top-bar">
+                    <div class="testimonials-slider-card-icon-star-group">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonials-slider-card-icon-verified">
+                      <i class="fa-solid fa-check"></i>
+                      <span>verified</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>it was the right choice to my fathers burial. thank you..</h4>
+                    <p>it was the right choice to my fathers burial. thank you..</p>
+                  </div>
+                  <div>
+                    <span class="testimonial-bold-text">Jan Hoffmann,</span>
+                    <span>3 hours ago</span>
+                  </div>
+                </div>
+              </div>
+              <!-- card 1 -->
+              <div class="testimonial-slide-card-inner">
+                <div class="testimonials-slider-card">
+                  <div class="testimonials-slider-card-top-bar">
+                    <div class="testimonials-slider-card-icon-star-group">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonials-slider-card-icon-verified">
+                      <i class="fa-solid fa-check"></i>
+                      <span>verified</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>it was the right choice to my fathers burial. thank you..</h4>
+                    <p>it was the right choice to my fathers burial. thank you..</p>
+                  </div>
+                  <div>
+                    <span class="testimonial-bold-text">Jan Hoffmann,</span>
+                    <span>3 hours ago</span>
+                  </div>
+                </div>
+              </div>
+              <!-- card 1 -->
+              <div class="testimonial-slide-card-inner">
+                <div class="testimonials-slider-card">
+                  <div class="testimonials-slider-card-top-bar">
+                    <div class="testimonials-slider-card-icon-star-group">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonials-slider-card-icon-verified">
+                      <i class="fa-solid fa-check"></i>
+                      <span>verified</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>it was the right choice to my fathers burial. thank you..</h4>
+                    <p>it was the right choice to my fathers burial. thank you..</p>
+                  </div>
+                  <div>
+                    <span class="testimonial-bold-text">Jan Hoffmann,</span>
+                    <span>3 hours ago</span>
+                  </div>
+                </div>
+              </div>
+              <!-- card 1 -->
+              <div class="testimonial-slide-card-inner">
+                <div class="testimonials-slider-card">
+                  <div class="testimonials-slider-card-top-bar">
+                    <div class="testimonials-slider-card-icon-star-group">
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="testimonials-slider-card-icon-verified">
+                      <i class="fa-solid fa-check"></i>
+                      <span>verified</span>
+                    </div>
+                  </div>
+                  <div>
+                    <h4>it was the right choice to my fathers burial. thank you..</h4>
+                    <p>it was the right choice to my fathers burial. thank you..</p>
+                  </div>
+                  <div>
+                    <span class="testimonial-bold-text">Jan Hoffmann,</span>
+                    <span>3 hours ago</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Repeat for other cards -->
+            </div>
+            <div class="testimonial-slider-button-group">
+              <div class="next-prev-button-group">
+                <button class="prev">
+                  <i class="fa-solid fa-arrow-left-long"></i>
+                </button>
+                <button class="next">
+                  <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- testimonial -->
+  <!-- script cdn font awesome  -->
+  <script src="https://kit.fontawesome.com/253828a4b7.js" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/253828a4b7.js" crossorigin="anonymous"></script>
+  <script src="./shop.js"></script>
   <!-- script  -->
   <script>
     var acc = document.querySelectorAll(".accordion input[type='checkbox']");
@@ -1232,5 +1277,6 @@
       });
     }
   </script>
-  </body>
+</body>
+
 </html>
