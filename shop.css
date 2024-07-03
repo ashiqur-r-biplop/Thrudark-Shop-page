@@ -939,6 +939,9 @@ input:checked~.accordion-content {
         justify-content: center;
         align-items: center;
     }
+    .card .card-image img {
+        object-fit: contain;
+    }
     ._product {
         padding: 0 10px;
         padding-top: 40px;
