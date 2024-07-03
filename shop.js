@@ -53,16 +53,39 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     const isMobile = window.innerWidth < 768;
+    const smallPhone = window.innerWidth < 450;
+    const lgPhone = window.innerWidth > 450 && window.innerWidth < 768;
 
     if (isMobile) {
-      if(currentSlideIndex >= 5){
-        sliderContent.style.transform = `translateX(-${
-            currentSlideIndex * 400
+      if (smallPhone) {
+        if (currentSlideIndex >= 5) {
+          sliderContent.style.transform = `translateX(-${
+            currentSlideIndex * 100
           }px)`;
+        }
+
+        sliderContent.style.transform = `translateX(-${
+          currentSlideIndex * 290
+        }px)`;
+      } else if (currentSlideIndex >= 5) {
+        sliderContent.style.transform = `translateX(-${
+          currentSlideIndex * 280
+        }px)`;
+      } else if (lgPhone) {
+        if (currentSlideIndex >= 5) {
+          sliderContent.style.transform = `translateX(-${
+            currentSlideIndex * 100
+          }px)`;
+        }
+
+        sliderContent.style.transform = `translateX(-${
+          currentSlideIndex * 590
+        }px)`;
+      } else {
+        sliderContent.style.transform = `translateX(-${
+          currentSlideIndex * 380
+        }px)`;
       }
-      sliderContent.style.transform = `translateX(-${
-        currentSlideIndex * 380
-      }px)`;
     } else {
       sliderContent.style.transform = `translateX(-${
         currentSlideIndex * 350
