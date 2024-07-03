@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./login.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-full login-page">
+        <div class="row flex-fill">
+            <div class="col-lg-6 d-none d-lg-block login-bg mt-5">
+                <img class="w-100 h-100" src="./image/GoDark_Welcome_Page_Image_1800x1800_1_900x.webp" alt="">
+            </div>
+            <div class="col-lg-6 d-flex justify-content-center mt-5">
+                <div class="login-form">
+
+                    <div class="login_content d-flex justify-content-around">
+                        <a href="#">
+                            <h2 class="text-center text_active active" id="join-btn">JOIN NOW</h2>
+                        </a>
+                        <a href="#">
+                            <h2 class="text-center" id="login-btn">LOG IN</h2>
+                        </a>
+
+                    </div>
+                    <div id="join-form">
+                        <div class="login_content">
+                            <h2>WELCOME TO THE DARK SIDE</h2>
+                            <p>Sign up for free and get access to Oblivion, exclusive products, early access and more.
+                            </p>
+                            <p>• Earn points with every purchase (£1 = 1 point)</p>
+                            <p>• Exclusive access to Oblivion, offering 20% off selected lines for GoDark members only
+                            </p>
+                            <p>• Climb the tiers to unlock 20% off all orders, free shipping/returns and members only
+                                events.
+                            </p>
+                        </div>
+                        <div class="input_field">
+                            <div class="frm-Form_Row">
+                                <input class="frm-Form_Input" type="text" name="customer[first_name]"
+                                    id="CustomerFirstName" autocomplete="given-name" placeholder="First name"
+                                    required="">
+                            </div>
+                            <div class="frm-Form_Row">
+                                <input class="frm-Form_Input" type="text" name="customer[last_name]"
+                                    id="CustomerLastName" autocomplete="family-name" placeholder="Last name"
+                                    required="">
+                            </div>
+                            <div class="frm-Form_Row">
+                                <input class="frm-Form_Input" type="email" name="customer[email]" id="CustomerEmail"
+                                    spellcheck="false" autocapitalize="off" autocomplete="email" aria-required="true"
+                                    placeholder="Email" required="">
+                            </div>
+                            <div class="frm-Form_Row">
+                                <input class="frm-Form_Input" type="password" name="customer[password]"
+                                    id="CustomerPassword" aria-required="true" placeholder="Password" required="">
+                            </div>
+                        </div>
+                        <div class="button_content d-flex justify-content-between createBtn">
+                            <a href="#" class="hero-btn btn-secondary">
+                                <span class="hero-btn-text">Create</span>
+
+                                <span class="hero-btn-icon">
+
+                                    <svg width="10" height="12" viewBox="0 0 10 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4 2C4 2.53043 3.78929 3.03914 3.41421 3.41421C3.03914 3.78929 2.53043 4 2 4C1.46957 4 0.960859 3.78929 0.585786 3.41421C0.210714 3.03914 0 2.53043 0 2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0C2.53043 0 3.03914 0.210714 3.41421 0.585786C3.78929 0.960859 4 1.46957 4 2ZM4 10C4 10.5304 3.78929 11.0391 3.41421 11.4142C3.03914 11.7893 2.53043 12 2 12C1.46957 12 0.960859 11.7893 0.585786 11.4142C0.210714 11.0391 0 10.5304 0 10C0 9.46957 0.210714 8.96086 0.585786 8.58579C0.960859 8.21071 1.46957 8 2 8C2.53043 8 3.03914 8.21071 3.41421 8.58579C3.78929 8.96086 4 9.46957 4 10ZM10 6C10 6.53043 9.78929 7.03914 9.41421 7.41421C9.03914 7.78929 8.53043 8 8 8C7.46957 8 6.96086 7.78929 6.58579 7.41421C6.21071 7.03914 6 6.53043 6 6C6 5.46957 6.21071 4.96086 6.58579 4.58579C6.96086 4.21071 7.46957 4 8 4C8.53043 4 9.03914 4.21071 9.41421 4.58579C9.78929 4.96086 10 5.46957 10 6Z"
+                                            fill="#7B7356" />
+                                    </svg>
+
+                            </a>
+
+                            <div class="policy">
+                                <p>
+                                    By clicking on ‘Submit’ you are agreeing to our
+                                    <a href="/pages/terms-conditions" title="Terms &amp; Conditions"><span>Terms &amp;
+                                            Conditions </span></a> &amp;
+                                    <a href="/pages/privacy-policy" target="_blank" title="Privacy Policy"><span>Privacy
+                                            Policy</a></span>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="log_in" id="login-form">
+                        <div class="login_content">
+                            <h2>WELCOME TO THE DARK SIDE</h2>
+                            <p>Sign in and get access to Oblivion, exclusive products, early access and track your
+                                GoDark
+                                points.
+                            </p>
+
+                        </div>
+                        <div class="input_field">
+                            <div class="frm-Form_Row">
+                                <input class="frm-Form_Input" type="email" name="customer[email]" id="CustomerEmail"
+                                    spellcheck="false" autocapitalize="off" autocomplete="email" aria-required="true"
+                                    placeholder="Email" required="">
+                            </div>
+                            <div class="frm-Form_Row">
+                                <input class="frm-Form_Input" type="password" name="customer[password]"
+                                    id="CustomerPassword" aria-required="true" placeholder="Password" required="">
+                            </div>
+                        </div>
+                        <div class="button_content d-flex justify-content-between">
+                            <a href="#" class="hero-btn btn-secondary">
+                                <span class="hero-btn-text">Sign in</span>
+                                <span class="hero-btn-icon">
+                                    <svg width="10" height="12" viewBox="0 0 10 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4 2C4 2.53043 3.78929 3.03914 3.41421 3.41421C3.03914 3.78929 2.53043 4 2 4C1.46957 4 0.960859 3.78929 0.585786 3.41421C0.210714 3.03914 0 2.53043 0 2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0C2.53043 0 3.03914 0.210714 3.41421 0.585786C3.78929 0.960859 4 1.46957 4 2ZM4 10C4 10.5304 3.78929 11.0391 3.41421 11.4142C3.03914 11.7893 2.53043 12 2 12C1.46957 12 0.960859 11.7893 0.585786 11.4142C0.210714 11.0391 0 10.5304 0 10C0 9.46957 0.210714 8.96086 0.585786 8.58579C0.960859 8.21071 1.46957 8 2 8C2.53043 8 3.03914 8.21071 3.41421 8.58579C3.78929 8.96086 4 9.46957 4 10ZM10 6C10 6.53043 9.78929 7.03914 9.41421 7.41421C9.03914 7.78929 8.53043 8 8 8C7.46957 8 6.96086 7.78929 6.58579 7.41421C6.21071 7.03914 6 6.53043 6 6C6 5.46957 6.21071 4.96086 6.58579 4.58579C6.96086 4.21071 7.46957 4 8 4C8.53043 4 9.03914 4.21071 9.41421 4.58579C9.78929 4.96086 10 5.46957 10 6Z"
+                                            fill="#7B7356" />
+                                    </svg>
+
+                            </a>
+
+                            <div class="policy">
+                                <p>
+                                    Forgot your password?
+                                    <span id="click-btn">Click
+                                        here</span>
+                                </p>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="click_here" id="click-form">
+                        <div class="login_content">
+                            <h2>WELCOME TO THE DARK SIDE</h2>
+                            <p>Sign in and get access to Oblivion, exclusive products, early access and track your
+                                GoDark
+                                points.
+                            </p>
+
+                        </div>
+                        <div class="input_field">
+                            <div class="frm-Form_Row">
+                                <input class="frm-Form_Input" type="email" name="customer[email]" id="CustomerEmail"
+                                    spellcheck="false" autocapitalize="off" autocomplete="email" aria-required="true"
+                                    placeholder="Email" required="">
+                            </div>
+                        </div>
+                        <div class="button_content d-flex justify-content-between">
+                            <a href="#" class="hero-btn btn-secondary">
+                                <span class="hero-btn-text">Submit</span>
+                                <span class="hero-btn-icon">
+                                    <svg width="10" height="12" viewBox="0 0 10 12" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4 2C4 2.53043 3.78929 3.03914 3.41421 3.41421C3.03914 3.78929 2.53043 4 2 4C1.46957 4 0.960859 3.78929 0.585786 3.41421C0.210714 3.03914 0 2.53043 0 2C0 1.46957 0.210714 0.960859 0.585786 0.585786C0.960859 0.210714 1.46957 0 2 0C2.53043 0 3.03914 0.210714 3.41421 0.585786C3.78929 0.960859 4 1.46957 4 2ZM4 10C4 10.5304 3.78929 11.0391 3.41421 11.4142C3.03914 11.7893 2.53043 12 2 12C1.46957 12 0.960859 11.7893 0.585786 11.4142C0.210714 11.0391 0 10.5304 0 10C0 9.46957 0.210714 8.96086 0.585786 8.58579C0.960859 8.21071 1.46957 8 2 8C2.53043 8 3.03914 8.21071 3.41421 8.58579C3.78929 8.96086 4 9.46957 4 10ZM10 6C10 6.53043 9.78929 7.03914 9.41421 7.41421C9.03914 7.78929 8.53043 8 8 8C7.46957 8 6.96086 7.78929 6.58579 7.41421C6.21071 7.03914 6 6.53043 6 6C6 5.46957 6.21071 4.96086 6.58579 4.58579C6.96086 4.21071 7.46957 4 8 4C8.53043 4 9.03914 4.21071 9.41421 4.58579C9.78929 4.96086 10 5.46957 10 6Z"
+                                            fill="#7B7356" />
+                                    </svg>
+
+                            </a>
+
+                            <div class="policy">
+                                <p>
+                                    <span id="cannel-btn">Cannel</span>
+                                </p>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
