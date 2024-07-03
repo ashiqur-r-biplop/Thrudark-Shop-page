@@ -55,12 +55,17 @@ document.addEventListener("DOMContentLoaded", function () {
     const isMobile = window.innerWidth < 768;
 
     if (isMobile) {
+      if(currentSlideIndex >= 5){
+        sliderContent.style.transform = `translateX(-${
+            currentSlideIndex * 400
+          }px)`;
+      }
       sliderContent.style.transform = `translateX(-${
-        currentSlideIndex * 375
+        currentSlideIndex * 380
       }px)`;
     } else {
       sliderContent.style.transform = `translateX(-${
-        currentSlideIndex * 390
+        currentSlideIndex * 350
       }px)`;
     }
 

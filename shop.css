@@ -742,6 +742,7 @@ input:checked~.accordion-content {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 6px;
     min-width: 200px !important;
     height: 100%;
 
@@ -773,7 +774,13 @@ input:checked~.accordion-content {
     gap: 4px;
 }
 
-.testimonials-slider-card-icon-star-group i{
+.testimonial-trustpilot {
+    display: flex;
+    align-items: center;
+}
+
+.testimonials-slider-card-icon-star-group i,
+.testimonial-trustpilot i {
     background-color: #00B67A;
     color: #fff;
     width: 20px;
@@ -814,26 +821,29 @@ input:checked~.accordion-content {
     font-family: "TTMussels-Light";
 
 }
-.testimonial-slide-card-inner h4{
 
-}
+.testimonial-slide-card-inner h4 {}
+
 .testimonials-slider-card-top-bar {
     display: flex;
     align-items: center;
     gap: 20px;
 }
-.testimonials-slider-card-icon-verified{
+
+.testimonials-slider-card-icon-verified {
     display: flex;
     align-items: center;
     gap: 5px;
 }
-.testimonials-slider-card-icon-verified i{
+
+.testimonials-slider-card-icon-verified i {
     background-color: #fff;
     color: #161616;
     padding: 2px;
     font-size: 12px;
     border-radius: 100%;
 }
+
 .next-prev-button-group {
     display: flex;
     justify-content: space-between;
@@ -845,7 +855,20 @@ input:checked~.accordion-content {
     transform: translateY(-50%);
     width: 100%;
     z-index: 99999 !important;
+
 }
+
+.testimonials-slider-card h4 {
+    font-size: 12px;
+    font-family: "TTMussels-Light";
+
+}
+
+.testimonial-bold-text {
+    font-weight: 700;
+    color: #4f4f4f;
+}
+
 
 .next-prev-button-group button {
     border: none;
@@ -869,7 +892,7 @@ input:checked~.accordion-content {
 
 /* testimonial */
 /* swiper css  */
-@media screen and (min-width: 0px) and (max-width: 480px) {
+@media screen and (min-width: 0px) and (max-width: 520px) {
     .accordion-wrapper {
         border-radius: 8px;
         overflow: hidden;
@@ -878,33 +901,13 @@ input:checked~.accordion-content {
         margin: 0 auto;
     }
 
-    .dot-and-next-prev-button-group {
-        width: 100%;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .dot {
-        background-color: #CBCBCB;
-        width: 8px;
-        height: 8px;
-    }
-
-    .dot::before {
-        content: "";
-        position: absolute;
-        top: 14px;
-        width: 18px;
-        height: 18px;
-        border: 1px solid #CBCBCB;
-        border-radius: 100%;
-    }
 
     .next-prev-button-group button {
         border: none;
         width: 35px;
         height: 35px;
         font-size: 14px;
+        border: 1px solid #cacaca;
     }
 
     .testimonial-slide-card-inner {
@@ -918,5 +921,31 @@ input:checked~.accordion-content {
         box-shadow: 1px 10px 67px -71px rgba(0, 0, 0, 0.75);
         -webkit-box-shadow: 1px 10px 67px -71px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 1px 10px 67px -71px rgba(0, 0, 0, 0.75);
+    }
+
+    .shop-grid-card {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .card {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    ._product {
+        padding: 0 10px;
+        padding-top: 40px;
+    }
+
+    ._product_content_wrap {
+        flex-direction: column;
+    }
+
+    .testimonial-container {
+        flex-direction: column;
+    }
+
+    .testimonial-slider-container {
+        width: 100%;
     }
 }
