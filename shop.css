@@ -157,7 +157,12 @@ select {
     opacity: 0;
     object-fit: contain;
 }
-
+.card .product-price,
+    .amount {
+        text-align: center;
+        font-size: 14px !important;
+        letter-spacing: 2px !important;
+    }
 .card:hover .img .back-site {
     opacity: 1;
     transition: all .3s ease-in-out;
@@ -1098,8 +1103,52 @@ input:checked~.accordion-content {
         font-size: 32px !important;
         font-family: "TTMussels-Light" !important;
     }
-    .testimonial-slide-card-inner{
+
+    .testimonial-slide-card-inner {
         min-width: 260px !important;
         width: 100% !important;
+    }
+}
+
+@media screen and (min-width: 721px) and (max-width: 1025px) {
+    .shop-grid-card {
+        padding: 20px 10px;
+        gap: 10px;
+    }
+
+    .card {
+        width: 100%;
+
+    }
+
+    .card .card-image,
+    .card .img {
+        width: 100%;
+        height: 300px !important;
+    }
+
+    .card-content {
+        padding-top: 10px !important;
+    }
+
+    .card .product-price,
+    .amount {
+        text-align: center;
+        font-size: 14px !important;
+        letter-spacing: 2px;
+    }
+
+    ._product {
+        padding: 20px !important;
+    }
+
+    ._product_content_wrap {
+        gap: 20px !important;
+    }
+
+    ._product_card_content h2 {
+        font-size: 36px !important;
+        font-family: "TTMussels-Light" !important;
+        font-weight: 400 !important;
     }
 }
