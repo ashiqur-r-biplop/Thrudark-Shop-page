@@ -58,18 +58,27 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (isMobile) {
       if (smallPhone) {
-        if (currentSlideIndex >= 5) {
+        if (currentSlideIndex == 2) {
+          console.log("object");
           sliderContent.style.transform = `translateX(-${
-            currentSlideIndex * 100
+            currentSlideIndex * 300
+          }px)`;
+        } else if (currentSlideIndex == 3) {
+          sliderContent.style.transform = `translateX(-${
+            currentSlideIndex * 295
+          }px)`;
+        } else if (currentSlideIndex >= 4) {
+          sliderContent.style.transform = `translateX(-${
+            currentSlideIndex * 285
+          }px)`;
+        }  else {
+          sliderContent.style.transform = `translateX(-${
+            currentSlideIndex * 310
           }px)`;
         }
-
-        sliderContent.style.transform = `translateX(-${
-          currentSlideIndex * 250
-        }px)`;
       } else if (currentSlideIndex >= 5) {
         sliderContent.style.transform = `translateX(-${
-          currentSlideIndex * 280
+          currentSlideIndex * 240
         }px)`;
       } else if (lgPhone) {
         if (currentSlideIndex >= 5) {
